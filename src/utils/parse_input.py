@@ -6,6 +6,7 @@ HF_MODEL_API = "https://huggingface.co/api/models/"
 HF_DATASET_API = "https://huggingface.co/api/datasets/"
 GH_REPO_API = "https://api.github.com/repos/"
 
+
 def parse_input_file(input_url: str) -> List[Dict[str, str]]:
     """
     Parses input URL, validates it, and fetches raw metadata.
@@ -112,6 +113,7 @@ def demo(input_url: str, debug: bool = True):
             "metadata_preview": str(enriched.get("metadata", {}))[:200],
         }
         print(json.dumps(record))
+
 
 # import json
 # import requests

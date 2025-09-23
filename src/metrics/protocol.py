@@ -54,4 +54,3 @@ class Metric(Protocol):
         Return the time taken to compute the score in milliseconds.
         """
         return getattr(self, "latency", 0.0)
-
